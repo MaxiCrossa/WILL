@@ -30,7 +30,7 @@ function filtrar(funcion) {
     for (var i = 0; i < this.length; i++){
       if(funcion(this[i])){
         filtrados.push(this[i]);
-      }
+      };
     }
     return filtrados;
   }
