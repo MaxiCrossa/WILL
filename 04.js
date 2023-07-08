@@ -13,8 +13,17 @@ function numeroSimetrico(num) {
   // numeroSimetrico(11711) devuelve true
 
   // Tu código:
+  var numString = num.toString();
+  var long = numString.length;
 
+  for(var i = 0; i < Math.floor(long / 2); i++){
+    if(numString[i] !== numString[long -1 - i]){
+      return false;
+    }
+  } return true;
 }
+var num = 11711;
+console.log(numeroSimetrico(num));
 
 // No modifiques nada debajo de esta linea //
 
